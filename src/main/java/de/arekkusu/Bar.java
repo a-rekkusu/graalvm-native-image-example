@@ -1,13 +1,16 @@
 package de.arekkusu;
 
-import javax.enterprise.context.RequestScoped;
-import javax.inject.Inject;
-
-@RequestScoped
 public class Bar
 {
-    @Inject
-    Foo foo;
+    private ProxyGenerator proxyGenerator = new ProxyGenerator();
+    private Foo foo = proxyGenerator.dynamicFoo;
 
+    public Bar() throws InstantiationException, IllegalAccessException
+    {
+    }
 
+    public void test()
+    {
+        foo.sayHelloFoo();
+    }
 }

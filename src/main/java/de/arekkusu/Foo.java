@@ -1,11 +1,7 @@
 package de.arekkusu;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Singleton;
 import java.util.UUID;
 
-@ApplicationScoped
-@Singleton
 public class Foo
 {
     private String id;
