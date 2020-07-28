@@ -8,7 +8,7 @@ import java.util.UUID;
 @Singleton
 public class Foo
 {
-    String id;
+    private String id;
     public static final Foo instance = new Foo();
 
     public Foo()
