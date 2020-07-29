@@ -14,6 +14,6 @@ public class Foo
 
     public void sayHelloFoo()
     {
-        System.out.println("Hello from Foo with id " + id);
+        System.out.println("Hello from Foo with id " + id + "and class name: " + instance.getClass().getName());
     }
 }

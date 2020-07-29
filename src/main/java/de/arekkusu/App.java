@@ -29,11 +29,6 @@ public class App
             System.out.println("Reflection used: Available user method: " + method.getName());
         }
 
-        Bar bar = new Bar();
-        Bar bar2 = new Bar();
-        bar.test();
-        bar2.test();
-
         Thread.sleep(4000);
     }
 }
