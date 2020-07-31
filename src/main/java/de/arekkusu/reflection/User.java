@@ -1,4 +1,4 @@
-package de.arekkusu;
+package de.arekkusu.reflection;
 
 public class User
 {

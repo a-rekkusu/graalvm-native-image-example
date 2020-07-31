@@ -1,7 +1,9 @@
-package de.arekkusu;
+package de.arekkusu.proxyGeneration;
 
+import javax.enterprise.context.ApplicationScoped;
 import java.util.UUID;
 
+@ApplicationScoped
 public class Foo
 {
     private String id;

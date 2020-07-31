@@ -1,4 +1,4 @@
-package de.arekkusu;
+package de.arekkusu.reflection;
 
 import java.lang.reflect.Method;
 
@@ -27,6 +27,22 @@ public class App
         for (Method method : userMethods)
         {
             System.out.println("Reflection used: Available user method: " + method.getName());
+        }
+
+        try
+        {
+            Class clazz1 = Class.forName("example/Foo$$OwbNormalScopeProxy0.class");
+            System.out.println("Proxy class found: " + clazz1.getName());
+            Class clazz2 = Class.forName("example/Foo2$$OwbNormalScopeProxy0.class");
+            System.out.println("Proxy class found: " + clazz2.getName());
+            Class clazz3 = Class.forName("example/Foo3$$OwbNormalScopeProxy0.class");
+            System.out.println("Proxy class found: " + clazz3.getName());
+            Class clazz4 = Class.forName("example/Foo4$$OwbNormalScopeProxy0.class");
+            System.out.println("Proxy class found: " + clazz4.getName());
+        }
+        catch (ClassNotFoundException e)
+        {
+            e.printStackTrace();
         }
 
         Thread.sleep(4000);
