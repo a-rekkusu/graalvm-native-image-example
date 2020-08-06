@@ -4,12 +4,12 @@ import javax.enterprise.context.ApplicationScoped;
 import java.util.UUID;
 
 @ApplicationScoped
-public class Foo
+public class Foo1
 {
     private String id;
-    public static final Foo instance = new Foo();
+    public static final Foo1 instance = new Foo1();
 
-    public Foo()
+    public Foo1()
     {
         this.id = UUID.randomUUID().toString();
     }
