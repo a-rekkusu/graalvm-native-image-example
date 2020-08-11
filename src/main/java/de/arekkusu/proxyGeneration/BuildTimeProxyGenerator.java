@@ -65,7 +65,7 @@ public class BuildTimeProxyGenerator
                     }
                 });
 
-        ClassLoaderProxyService.Spy.class.cast(WebBeansContext.currentInstance().getService(DefiningClassService.class))
+        final String config = ClassLoaderProxyService.Spy.class.cast(WebBeansContext.currentInstance().getService(DefiningClassService.class))
                 .getProxies().entrySet().stream()
                 .map(e ->
                 {
@@ -93,7 +93,7 @@ public class BuildTimeProxyGenerator
     // CDI classes to register
     private static Stream<Class<?>> classes()
     {
-        return Stream.of(Foo1.class, Foo2.class, Foo3.class, Foo4.class);
+        return Stream.of(Foo.class);
     }
 
     private boolean isIgnoredBean(final Bean<?> b)

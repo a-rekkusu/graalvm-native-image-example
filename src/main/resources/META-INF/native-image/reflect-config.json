@@ -1,6 +1,6 @@
 [
 {
-  "name":"de.arekkusu.User",
+  "name":"de.arekkusu.runtime.User",
   "allDeclaredMethods":true,
   "methods":[{"name":"getName","parameterTypes":[] }]
 }

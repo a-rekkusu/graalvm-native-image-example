@@ -19,11 +19,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>net.bytebuddy</groupId>
-            <artifactId>byte-buddy</artifactId>
-            <version>1.10.13</version>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
@@ -78,7 +73,7 @@
                         <archive>
                             <manifest>
                                 <addClasspath>true</addClasspath>
-                                <mainClass>de.arekkusu.reflection.App</mainClass>
+                                <mainClass>de.arekkusu.runtime.App</mainClass>
                             </manifest>
                         </archive>
                     </configuration>
