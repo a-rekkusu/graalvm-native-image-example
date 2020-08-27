@@ -1,7 +1,98 @@
 [
 {
+  "name":"de.arekkusu.proxyGeneration.Foo",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"de.arekkusu.proxyGeneration.Foo$$OwbNormalScopeProxy0",
+  "fields":[{"name":"owbContextualInstanceProvider"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"de.arekkusu.runtime.User",
   "allDeclaredMethods":true,
   "methods":[{"name":"getName","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.Object",
+  "allDeclaredMethods":true,
+  "allPublicMethods":true
+},
+{
+  "name":"java.security.Principal",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"javax.enterprise.context.control.RequestContextController",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"javax.enterprise.inject.spi.InterceptionFactory",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.apache.webbeans.conversation.ConversationImpl",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.apache.webbeans.corespi.se.StandaloneContextsService",
+  "methods":[{"name":"<init>","parameterTypes":["org.apache.webbeans.config.WebBeansContext"] }]
+},
+{
+  "name":"org.apache.webbeans.event.EventImpl",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.apache.webbeans.inject.impl.InjectionPointImpl",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.apache.webbeans.inject.instance.InstanceImpl",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true
+},
+{
+  "name":"org.apache.webbeans.intercept.ApplicationScopedBeanInterceptorHandler",
+  "methods":[{"name":"<init>","parameterTypes":["javax.enterprise.inject.spi.BeanManager","javax.enterprise.inject.spi.Bean"] }]
+},
+{
+  "name":"org.apache.webbeans.lifecycle.StandaloneLifeCycle",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.apache.webbeans.service.ClassLoaderProxyService$LoadFirst",
+  "methods":[{"name":"<init>","parameterTypes":["org.apache.webbeans.config.WebBeansContext"] }]
+},
+{
+  "name":"org.apache.webbeans.spi.BeanArchiveService"
+},
+{
+  "name":"org.apache.webbeans.spi.LoaderService"
+},
+{
+  "name":"org.apache.webbeans.spi.ScannerService"
 }
 ]

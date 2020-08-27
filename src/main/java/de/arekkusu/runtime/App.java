@@ -6,24 +6,20 @@ import org.apache.webbeans.spi.DefiningClassService;
 
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
-import javax.inject.Inject;
 import java.lang.reflect.Method;
 
 public class App
 {
-    @Inject
-    Foo foo;
 
     public static void main(String[] args) throws Exception
     {
         try (final SeContainer container = SeContainerInitializer.newInstance()
-                        .disableDiscovery()
-                        .addProperty(DefiningClassService.class.getName(), ClassLoaderProxyService.LoadFirst.class.getName()) // no unsafe usage
-                        .addProperty("org.apache.webbeans.proxy.useStaticNames", "true") // a bit unsafe but otherwise no way to get pregenerated proxies
-                        .initialize())
+                .addProperty(DefiningClassService.class.getName(), ClassLoaderProxyService.LoadFirst.class.getName())
+                .addProperty("org.apache.webbeans.proxy.useStaticNames", "true")
+                .initialize())
         {
-            App app = new App();
-            app.foo.sayHelloFoo();
+            Foo foo = container.select(Foo.class).get();
+            System.err.println(foo);
         }
 
         System.out.println("Hello World!");
@@ -62,6 +58,5 @@ public class App
             e.printStackTrace();
         }
 
-        Thread.sleep(4000);
-    }
+        Thread.sleep(4000);    }
 }
